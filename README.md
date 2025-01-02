@@ -1,26 +1,26 @@
 # HogFast
-Reduces memory of beefy Amigas accurately for running demos made for the Amiga 500 OCS 1MB platform.
+Reduces memory of beefy Amigas for running demos or any executable made for the Amiga 500 OCS 1MB platform accurately.
 
 ## Requirements
-Amiga 500, or any Amiga with a RAM expansion or accelerator with RAM mappable to Slowmem a.k.a. $C0 or Ranger RAM. Examples are Kipper or Individual Computers expansions.
+Any Amiga with Fastram and/or Slowmem a.k.a. $C0 or Ranger RAM, or expansion with such. Examples are Kipper2k or Individual Computers expansions and accelerators.
 
 ## Software description
-Amiga CLI utility executable.
+CLI utility executable.
 
 ## Problem that the software solves
-Allows to run the entirety of demos released for the platform on any Amiga, with regards to limiting Slowmem. Also works for games, or any type of software intending to push the limits of said platform. With persistence, so that you can have your Amiga always on, and not reboot unless the demo or game does not exit, or does not exit cleanly.
+Allows to run all demos for the above platform on beefier Amigas accurately, with regards to limiting Slowmem and not using any Fastmem (which accelerates the CPU performace by up to 33%). Also works for games, or any type of software intending to push the limits of said platform. It has two persistent modes, so that you can have your Amiga always on, and run software endlessly and accurately without reboot (obviously unless it never exits, or doesn't exit cleanly).
 
-It also allows you to toggle Slowmem completely off, so that you can target or run OCS 512k platform software at whim. It will always turn off all other types of non-Chipmem permanently. It will not limit Chipmem in any way, as there are some file systems vs harddisk controllers that can "HogChip".
+It also allows you to toggle Slowmem completely off, so that you can target or run OCS 512k platform software at whim. It will always turn off all other types of non-Chipmem until a reboot, and it will not limit Chipmem in any way (as there are some file systems vs. harddisk controller ROMs that may hog Chipmem for buffers before booting to CLI.)
 
 ## Purpose
 Enjoying and testing software on real hardware or in WinUAE from harddisk, without first having to write disks or disk images to get the correct environment.
 
 ## Usage
-HogFast once will allocate all Fastmem plus all slowmem but what's left from an optimal 1.3 bootblock to CLI.
+Running HogFast once will allocate all Fastmem plus all slowmem except what's left from an optimal 1.3 bootblock to CLI.
 
-Thereafter, HogFast will alternately allocate all slowmem and restore the above accurate amount of slowmem.
+Thereafter, HogFast will alternately allocate all slowmem / restore the above accurate amount of slowmem. "Toggle 512k slowmem on/off".
 
-This allows to have an Amiga always-on and continuously receive demos, CLI-compatible games, or your latest build infinitely and *without reboot*, until the software you run prevents exit or exits uncleanly.
+This allows to have an Amiga always-on to continuously receive demos, CLI-compatible games, or your latest build infinitely and *without reboot*, until the software you run prevents exit or exits uncleanly.
 
 ## Notes
 This release is not part of the AmiLiveFloppy project, but connected to it in the following ways:
