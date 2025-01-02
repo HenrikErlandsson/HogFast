@@ -8,7 +8,7 @@ It persists your setting, so that you can have your Amiga always on, and not reb
 This also allows you to toggle Slowmem completely off, so that you can target or run OCS 512k platform software. It will always turn off all other types of non-Chipmem permanently. It will not limit Chipmem in any way, as there are some file systems vs harddisk controllers that can "HogChip".
 
 ## Purpose
-Enjoying and testing on real hardware, without having to write disks or disk images (i.e. run from harddisk).
+Enjoying and testing software on real hardware or in WinUAE from harddisk, without first having to write disks or disk images.
 
 ## Usage
 HogFast once will allocate all Fastmem plus all slowmem but what's left from an optimal 1.3 bootblock to CLI.
