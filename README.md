@@ -13,6 +13,6 @@ Enjoying and testing on real hardware, without having to write disks or disk ima
 ## Usage
 HogFast once will allocate all Fastmem plus all slowmem but what's left from an optimal 1.3 bootblock to CLI.
 
-Thereafter, HogFast will alternately allocate all slowmem and restore just enough slowmem to meet above spec.
+Thereafter, HogFast will alternately allocate all slowmem and restore the above accurate amount of slowmem.
 
 This allows to have an Amiga always-on and continuously receive demos, CLI-compatible games, or your latest build infinitely and *without reboot*, until the software you run prevents exit or exits uncleanly.
